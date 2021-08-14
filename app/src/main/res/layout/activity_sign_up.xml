@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity">
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/allerta"
+        android:text="Female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+    <EditText
+        android:id="@+id/userName2"
+        android:layout_width="@dimen/username2"
+        android:layout_height="@dimen/userNamehight"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/inputTextBox"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/username"
+        android:textSize="@dimen/username"
+        app:circularflow_defaultRadius="@dimen/sign_up_btn"
+        app:circularflow_radiusInDP="@string/sign_in_btn"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/signUpImg"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/login"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="@string/create_acc"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/signUpImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="@+id/signUpImg"
+        app:layout_constraintTop_toTopOf="@+id/signUpImg"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="@dimen/username2"
+        android:layout_height="@dimen/userNamehight"
+        android:layout_marginTop="236dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/inputTextBox"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/username"
+        android:textSize="@dimen/username"
+        app:circularflow_defaultRadius="@dimen/sign_up_btn"
+        app:circularflow_radiusInDP="@string/sign_in_btn"
+        app:layout_constraintBottom_toTopOf="@+id/userName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signUpImg"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="SIGN UP"
+        app:backgroundTint="@color/sign_up_btn"
+        app:cornerRadius="@dimen/sign_up_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="@dimen/username2"
+        android:layout_height="@dimen/userNamehight"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/inputTextBox"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/username"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword4"
+        android:layout_width="@dimen/username2"
+        android:layout_height="@dimen/userNamehight"
+        android:layout_marginTop="8dp"
+        android:background="@color/inputTextBox"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="re-enter Password"
+        android:inputType="textPassword"
+        android:textSize="@dimen/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="@dimen/username2"
+        android:layout_height="@dimen/userNamehight"
+        android:layout_marginTop="8dp"
+        android:background="@color/inputTextBox"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textSize="@dimen/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/allerta"
+        android:text="Male"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
